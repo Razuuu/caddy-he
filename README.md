@@ -1,6 +1,12 @@
 Caddy DNS Module - Hurricane Electric
 ===================================
 
+## DNS Record
+1. Create a TXT record named _acme-challenge, click on "Enable entry for dynamic dns" and hit *Submit*.
+2. Search for that DNS record and click on that reload button.
+3. Click on *Generate a key* and copy that "API-KEY"
+4. Paste that button to .env -> HE_API_KEY=<YOUR_API_KEY>
+
 Example `compose.yml` file:
 
 ```bash
