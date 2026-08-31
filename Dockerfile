@@ -3,7 +3,7 @@ ARG VERSION=2.9.1
 FROM caddy:${VERSION}-builder-alpine AS builder
 ARG VERSION
 
-RUN --mount=type=cache,target=/root/.cache/go-build xcaddy build v${VERSION} --with github.com/caddy-dns/rfc2136@master
+RUN --mount=type=cache,target=/root/.cache/go-build xcaddy build v${VERSION} --with github.com/caddy-dns/he@master
 
 FROM caddy:${VERSION}-alpine
 ARG VERSION
